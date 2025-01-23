@@ -9,4 +9,4 @@ CORS(app)  # Enable CORS for frontend-backend communication
 app.register_blueprint(quiz_routes)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
