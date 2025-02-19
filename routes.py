@@ -3,7 +3,7 @@ from services.gpt_service import generate_questions
 
 quiz_routes = Blueprint("quiz_routes", __name__)
 
-@quiz_routes.route("/generate-questions", methods=["POST"])
+@quiz_routes.route("/generate-questions", methods=["GET"])
 def generate_questions_route():
     """
     Endpoint to generate multiple-choice questions based on user input.
